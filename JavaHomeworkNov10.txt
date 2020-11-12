@@ -1,0 +1,21 @@
+package practiceJava;
+//Create a small program that defines some fields.
+//Try creating some illegal field names and see what kind of error the compiler produces. 
+//Use the naming rules and conventions as a guide.
+//In the program you created, try leaving the fields uninitialized and print out their values.
+//Try the same with a local variable and see what kind of compiler errors you can produce.
+import java.util.Scanner;
+
+public class HomeworkNov10 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("How many cats do you have?");
+		int numCats = Integer.parseInt(input.nextLine());
+		
+		if (numCats > 4) {
+			System.out.println ("That's a lot of cats");
+			} else {
+				System.out.println("Get more cats");
+			}
+	}
+}
